@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Четыре сезона",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D611ADF5AAD898B8B651186E023.avif",
+    "price": "419 ₱",
+    "rating": 2,
+    "category": "close"
+  },
+  {
+    "id": 2,
+    "title": "Пепперони",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D610A62D78598406363A9A8AD65.avif",
+    "price": "619 ₱:",
+    "rating": 1,
+    "category": "meat"
+  },
+  {
+    "id": 3,
+    "title": "Гавайская",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D617E9339CFB185921A343AD8FD.avif",
+    "price": "349 ₱:",
+    "rating": 6,
+    "category": "grill"
+  },
+  {
+    "id": 4,
+    "title": "Ветчина и грибы",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D611F924987957B7F53424B682F.avif",
+    "price": "540 ₱:",
+    "rating": 4,
+    "category": "speecy"
+  },
+  {
+    "id": 5,
+    "title": "Маргариты",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D6105EF6690B86FBDE6150B5B0C.avif",
+    "price": "400 ₱:",
+    "rating": 7,
+    "category": "close"
+  },
+  {
+    "id": 6,
+    "title": "Сырная",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D610D2925109AB2E1C92CC5383C.avif",
+    "price": "400 ₱:",
+    "rating": 8,
+    "category": "speecy"
+  },
+  {
+    "id": 7,
+    "title": "Пицца Жюльен",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif",
+    "price": "630 ₱:",
+    "rating": 5,
+    "category": "meat"
+  },
+  {
+    "id": 8,
+    "title": "Чоризо Фреш",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61706D472F9A5D71EB94149304.avif",
+    "price": "630 ₱:",
+    "rating": 3,
+    "category": "grill"
+  }
+]
