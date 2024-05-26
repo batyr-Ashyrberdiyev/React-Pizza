@@ -62,5 +62,37 @@
     "price": "630 ₱:",
     "rating": 3,
     "category": "grill"
+  },
+  {
+    "id": 9,
+    "title": "Цыпленок Ранч",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D610BBEB562BD4D48786AD87270.avif",
+    "price": "689 ₱:",
+    "rating": 5,
+    "category": "grill"
+  },
+  {
+    "id": 10,
+    "title": "Двойная пепперони",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D6122BB3424B593BB15EACE3197.avif",
+    "price": "800 ₱:",
+    "rating": 2,
+    "category": "meat"
+  },
+  {
+    "id": 11,
+    "title": "Бургер пицца",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EE7D61698827EE9B8DB6D0AEC53410.avif",
+    "price": "530 ₱:",
+    "rating": 6,
+    "category": "speecy"
+  },
+  {
+    "id": 12,
+    "title": "Креветки со сладким чили",
+    "img": "https://media.dodostatic.net/image/r:292x292/11EEFB595A197C24BA932A0AD1144AFB.avif",
+    "price": "780 ₱:",
+    "rating": 8,
+    "category": "close"
   }
 ]
