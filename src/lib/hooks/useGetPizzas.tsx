@@ -1,9 +1,16 @@
-import { useQuery } from '@tanstack/react-query';
-import pizzasService from '../fetch/pizzas.service';
-import { useCategory } from '../zustand/useCategory';
+import { useQuery } from "@tanstack/react-query";
+import pizzasService from "../fetch/pizzas.service";
+import { useCategory } from "../zustand/useCategory";
+import { useSort } from "../zustand/useSort";
 
 const useGetPizzas = () => {
-  const acivecategory = useCategory((state) => state.activeCategory.id);
+  const activeCategory = useCategory((state) => state.activeCategory.id);
+  const activeSort = useSort((state) => state.activeSort.id);
+
+  const sortByCategory = () =>
+    activeCategory !== "all" ? "filter=" + activeCategory : "";
+
+  const sortBySort = () => `&sortBy=${activeSort}`;
 
   const {
     data: pizzasData,
@@ -11,8 +18,8 @@ const useGetPizzas = () => {
     isSuccess: pizzasIsSuccess,
     isError: pizzasIsError,
   } = useQuery({
-    queryKey: ['pizzasData', acivecategory],
-    queryFn: () => pizzasService.getPizzas(),
+    queryKey: ["pizzasData", activeCategory, activeSort],
+    queryFn: () => pizzasService.getPizzas(sortByCategory, sortBySort),
     select: ({ data }) => data,
   });
 
