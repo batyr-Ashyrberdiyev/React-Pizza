@@ -1,4 +1,5 @@
 import Category from "../components/Category";
+import HomePizzaLoader from "../components/HomePizzaLoader";
 import { PizzaCard } from "../components/PizzaCard";
 import { SortModal } from "../components/SortModal";
 import { categoriesData } from "../lib/database/category.data";
@@ -7,8 +8,7 @@ import { useCategory } from "../lib/zustand/useCategory";
 import { v4 } from "uuid";
 
 const HomePage = () => {
-  const { pizzasData } = useGetPizzas();
-
+  const { pizzasData, pizzasIsLoading } = useGetPizzas();
   const activeCategory = useCategory((state) => state.activeCategory);
 
   return (
@@ -29,9 +29,9 @@ const HomePage = () => {
 
       <h1 className="h1 mb-10">Все пиццы</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-x-5 gap-y-10">
-        {pizzasData?.map((item) => (
-          <PizzaCard key={v4()} {...item} />
-        ))}
+        {pizzasIsLoading
+          ? [...new Array(8)].map((_, index) => <HomePizzaLoader key={index} />)
+          : pizzasData?.map((item) => <PizzaCard key={v4()} {...item} />)}
       </div>
     </div>
   );

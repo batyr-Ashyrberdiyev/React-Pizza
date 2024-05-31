@@ -71,7 +71,7 @@ export const SortModal = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             // ref={sortRef}
-            className="bg-white absolute z-10 rounded-lg py-1 shadow-lg"
+            className="bg-white absolute z-10 rounded-lg shadow-lg"
           >
             {sortMenu.map((item) => (
               <div
